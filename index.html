@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mayuri Sutar | Fashion Model & Content Creator, Mumbai</title>
+<meta name="description" content="Portfolio of Mayuri Sutar, fashion model, influencer and content creator based in Mumbai. Open for brand collaborations.">
+<meta property="og:title" content="Mayuri Sutar | Model & Content Creator">
+<meta property="og:image" content="images/p7.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#241915;--dusk:#5b3a45;--apricot:#f0a35e;--salt:#f8f4ef;--palm:#3d6a52;--line:rgba(36,25,21,.18);
+--serif:"Bodoni Moda","Didot",Georgia,serif;--sans:"DM Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--salt);color:var(--ink);font:400 17px/1.65 var(--sans)}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--apricot);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+section{padding:88px 0}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08}
+h2{font-size:clamp(34px,5vw,54px);margin-bottom:28px}
+p{max-width:62ch}
+nav{position:sticky;top:0;z-index:20;background:rgba(248,244,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-family:var(--serif);font-size:20px;font-weight:500}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;font-size:15px}
+nav a{text-decoration:none}nav a:hover{color:var(--dusk);text-decoration:underline}
+.hero{padding:48px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(56px,10vw,128px);letter-spacing:-.02em}
+.hero h1 i{display:block;color:var(--dusk)}
+.hero .tag{font-size:20px;margin:24px 0 32px;max-width:36ch}
+.hero figure{position:relative}
+.hero figure img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 6px 6px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;background:var(--ink);color:var(--salt);text-decoration:none;font-weight:500}
+.btn:hover{background:var(--dusk)}
+.btn.ghost{background:none;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--salt)}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.about img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:10px 28px;margin-top:28px;border-top:1px solid var(--line);padding-top:24px}
+dt{color:var(--dusk);font-weight:500}
+.band{background:var(--ink);color:var(--salt)}
+.band h2{color:var(--salt)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px}
+.stats div{border-left:2px solid var(--apricot);padding-left:20px}
+.stats strong{display:block;font:500 clamp(40px,6vw,64px)/1 var(--serif);color:var(--apricot)}
+.stats span{opacity:.85}
+.cats{list-style:none;padding:0;border-top:1px solid var(--line)}
+.cats li{display:grid;grid-template-columns:minmax(180px,1fr) 2fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.cats h3{font-size:28px}
+.gallery{columns:3;column-gap:16px}
+.gallery button{display:block;width:100%;padding:0;border:0;background:none;margin-bottom:16px;cursor:zoom-in;border-radius:6px;overflow:hidden}
+.gallery img{width:100%;transition:transform .4s}
+.gallery button:hover img{transform:scale(1.03)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0}
+.chips li{border:1.5px solid var(--ink);border-radius:999px;padding:8px 18px}
+.band .chips li{border-color:var(--salt)}
+.services{list-style:none;padding:0}
+.services li{padding:16px 0;border-bottom:1px solid var(--line)}
+.services b{font-family:var(--serif);font-size:22px;font-weight:500;display:block}
+.contact{background:var(--apricot)}
+.contact .big{font:500 clamp(28px,5vw,52px)/1.15 var(--serif);word-break:break-word}
+.contact .btn.ghost{border-color:var(--ink)}
+footer{padding:28px 0;font-size:14px;text-align:center}
+#lb{position:fixed;inset:0;background:rgba(20,12,10,.94);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+#lb.on{display:flex}
+#lb img{max-height:92vh;border-radius:4px}
+#lb button{position:absolute;top:16px;right:20px;font-size:34px;color:#fff;background:none;border:0;cursor:pointer}
+@media(max-width:820px){
+ nav ul{display:none}
+ .hero .wrap,.about .wrap,.cols{grid-template-columns:1fr}
+ .hero figure{order:-1}
+ .gallery{columns:2}
+ .cats li{grid-template-columns:1fr;gap:6px}
+ section{padding:64px 0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<!-- ============ EDIT YOUR DETAILS HERE (see CONFIG at the bottom of this file) ============ -->
+<nav><div class="wrap"><b>Mayuri Sutar</b>
+<ul><li><a href="#about">About</a></li><li><a href="#reach">Reach</a></li><li><a href="#work">Content</a></li><li><a href="#gallery">Portfolio</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<h1>Mayuri <i>Sutar</i></h1>
+<p class="tag">Fashion model and content creator in Mumbai, telling stories through style, travel and food.</p>
+<div class="btns"><a class="btn" href="#contact">Work with me</a><a class="btn ghost" data-ig href="#" target="_blank" rel="noopener">@mayu_sutar0222</a></div>
+</div>
+<figure><img src="images/p7.jpg" alt="Mayuri Sutar in a white lace outfit on the beach at sunset"></figure>
+</div></header>
+
+<section id="about" class="about"><div class="wrap">
+<img src="images/p6.jpg" alt="Mayuri Sutar in black outfit and sunhat at a fort in Goa" loading="lazy">
+<div>
+<h2>Hi, I’m Mayuri.</h2>
+<p data-k="about"></p>
+<dl>
+<dt>Based in</dt><dd>Mumbai, India</dd>
+<dt>Age</dt><dd>27</dd>
+<dt>Height</dt><dd>5'6"</dd>
+<dt>Work</dt><dd>Fashion modelling, reels, photo shoots, brand collaborations</dd>
+<dt>Instagram</dt><dd><a data-ig href="#" target="_blank" rel="noopener">@mayu_sutar0222</a></dd>
+</dl>
+</div></div></section>
+
+<section id="reach" class="band"><div class="wrap">
+<h2>My reach</h2>
+<div class="stats" id="stats"></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2>What I create</h2>
+<ul class="cats">
+<li><h3>Fashion & lifestyle</h3><p>Western wear, ethnic fusion and everyday styling, shot in studios and on location.</p></li>
+<li><h3>Beauty & skincare</h3><p>Honest looks at products I use, from skin routines to makeup tutorials.</p></li>
+<li><h3>Food & restaurants</h3><p>Cafe and restaurant visits with reels that make people want to book a table.</p></li>
+<li><h3>Travel & hotels</h3><p>Stays, itineraries and destination stories, from Goa’s forts to Mumbai’s shoreline.</p></li>
+<li><h3>Fitness</h3><p>Workouts and wellness content for an active audience.</p></li>
+</ul>
+</div></section>
+
+<section id="gallery" style="padding-top:0"><div class="wrap">
+<h2>Portfolio</h2>
+<div class="gallery" id="g"></div>
+</div></section>
+
+<section id="collabs" class="band"><div class="wrap cols">
+<div><h2>Brand collaborations</h2><ul class="chips" id="brands"></ul></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<h2>Collaboration services</h2>
+<ul class="services">
+<li><b>Instagram reels & videos</b>Concept, shooting and editing for brand campaigns.</li>
+<li><b>Sponsored posts & stories</b>Product features that fit naturally into my feed.</li>
+<li><b>Fashion shoots & lookbooks</b>Western and ethnic wear modelling for brands and photographers.</li>
+<li><b>Hotel, cafe & restaurant visits</b>Barter or paid stay-and-dine collaborations with content in return.</li>
+<li><b>Event appearances & PR</b>Launches, fashion shows and influencer meets.</li>
+</ul>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let’s create something together.</h2>
+<p class="big"><a data-mail href="#"></a></p>
+<div class="btns" style="margin-top:28px">
+<a class="btn" data-wa href="#" target="_blank" rel="noopener">Message on WhatsApp</a>
+<a class="btn ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+</div>
+</div></section>
+<footer>© <span id="y"></span> Mayuri Sutar</footer>
+
+<div id="lb" role="dialog" aria-label="Photo viewer"><button aria-label="Close">×</button><img alt=""></div>
+
+<script>
+/* ===== CONFIG: change these values, save, and re-upload ===== */
+const CONFIG = {
+  instagram: "https://www.instagram.com/mayu_sutar0222",
+  email: "mayurisutar9802@gmail.com",          // business email
+  whatsapp: "8655139879",             // country code + number, no + or spaces
+  about: "I’m a Mumbai-based fashion model and content creator. I make style, travel and lifestyle content for an engaged audience, and I love working with brands that want real, good-looking storytelling.",
+  
+  stats: [["104 K","Instagram followers"]],
+  brands: [" IFP Festival Season 16","Time Fashion Week","Khan Saab Concert","Suvedyam Hotel","H$M","Urban Yog","Sudhati"]
+};
+/* ============================================================ */
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+$$('[data-ig]').forEach(a=>a.href=CONFIG.instagram);
+$$('[data-mail]').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});
+$$('[data-wa]').forEach(a=>a.href='https://wa.me/'+CONFIG.whatsapp);
+$$('[data-k]').forEach(e=>e.textContent=CONFIG[e.dataset.k]);
+$('#stats').innerHTML=CONFIG.stats.map(s=>`<div><strong>${s[0]}</strong><span>${s[1]}</span></div>`).join('');
+$('#brands').innerHTML=CONFIG.brands.map(b=>`<li>${b}</li>`).join('');
+$('#y').textContent=new Date().getFullYear();
+const photos=[[3,"Studio look in an Ajrakh print top and pleated skirt"],[5,"Black co-ord and sunhat at the Goa jetty"],[2,"Close-up portrait in sunglasses"],[8,"White halter top and black skirt"],[1,"Brown slip dress on the beach"],[4,"Green summer dress among the palms"],[9,"Black one-shoulder dress by the Christmas tree"],[6,"Fort tower in Goa"],[7,"White lace set at sunset"]];
+$('#g').innerHTML=photos.map(p=>`<button data-s="images/p${p[0]}.jpg" data-a="${p[1]}"><img src="images/p${p[0]}.jpg" alt="${p[1]}" loading="lazy"></button>`).join('');
+const lb=$('#lb'),li=lb.querySelector('img');
+$$('#g button').forEach(b=>b.onclick=()=>{li.src=b.dataset.s;li.alt=b.dataset.a;lb.classList.add('on')});
+lb.onclick=()=>lb.classList.remove('on');
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+</script>
+</body>
+</html>
