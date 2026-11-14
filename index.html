@@ -180,7 +180,38 @@ $$('[data-k]').forEach(e=>e.textContent=CONFIG[e.dataset.k]);
 $('#stats').innerHTML=CONFIG.stats.map(s=>`<div><strong>${s[0]}</strong><span>${s[1]}</span></div>`).join('');
 $('#brands').innerHTML=CONFIG.brands.map(b=>`<li>${b}</li>`).join('');
 $('#y').textContent=new Date().getFullYear();
-const photos=[[3,"Studio look in an Ajrakh print top and pleated skirt"],[5,"Black co-ord and sunhat at the Goa jetty"],[2,"Close-up portrait in sunglasses"],[8,"White halter top and black skirt"],[1,"Brown slip dress on the beach"],[4,"Green summer dress among the palms"],[9,"Black one-shoulder dress by the Christmas tree"],[6,"Fort tower in Goa"],[7,"White lace set at sunset"]];
+/* Gallery: [image number, alt text]. Images live in images/pN.jpg. To add more, drop a new file in images/ and add a line here. */
+const photos=[
+[3,"Studio look in an Ajrakh print top and pleated skirt"],
+[5,"Black co-ord and sunhat at the Goa jetty"],
+[2,"Close-up portrait in sunglasses"],
+[8,"White halter top and black skirt"],
+[1,"Brown slip dress on the beach"],
+[4,"Green summer dress among the palms"],
+[9,"Black one-shoulder dress by the Christmas tree"],
+[6,"Fort tower in Goa"],
+[7,"White lace set at sunset"],
+/* ---- new additions ---- */
+[10,"Straw hat, black halter top and charm necklace by the sea in Goa"],
+[11,"Black halter top and hat, hand on brim, sea view"],
+[12,"Side profile in black top with shell charm necklace"],
+[13,"Maroon bandana and top with satin skirt among palms"],
+[14,"Maroon one-shoulder top, black skirt and white bag on a Goa balcony"],
+[15,"Pink lily print co-ord sitting on a hotel bed"],
+[16,"Leaning back on the bed in a lily print co-ord"],
+[17,"Green printed halter dress under coconut palms"],
+[18,"White halter top and black skirt stepping out of a hotel room"],
+[19,"Sunglasses and white top at a hotel doorway"],
+[20,"Ivory embroidered lehenga with sheer cape, hand on hips"],
+[21,"Close-up in sequin blouse and pastel choker"],
+[22,"Hands in hair, sequin blouse and statement earrings"],
+[23,"Ivory lehenga leaning against the wall"],
+[24,"Ivory lehenga with embroidered cape, looking up"],
+[25,"Eyes closed, hands in hair in a sequin blouse"],
+[26,"Twirling the crushed-silk lehenga skirt"],
+[27,"Peach and yellow ombre cape with floral embroidered blouse"],
+[28,"Black and white portrait with kundan choker and earrings"]
+];
 $('#g').innerHTML=photos.map(p=>`<button data-s="images/p${p[0]}.jpg" data-a="${p[1]}"><img src="images/p${p[0]}.jpg" alt="${p[1]}" loading="lazy"></button>`).join('');
 const lb=$('#lb'),li=lb.querySelector('img');
 $$('#g button').forEach(b=>b.onclick=()=>{li.src=b.dataset.s;li.alt=b.dataset.a;lb.classList.add('on')});
