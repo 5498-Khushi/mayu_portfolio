@@ -1,0 +1,23 @@
+{
+  "name": "mayu-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Mayuri Sutar - Fashion Model & Content Creator",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/5498-Khushi/mayu_portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/5498-Khushi/mayu_portfolio/issues"
+  },
+  "homepage": "https://github.com/5498-Khushi/mayu_portfolio#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
